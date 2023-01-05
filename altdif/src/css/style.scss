@@ -1,5 +1,10 @@
 // body{
 //     min-width: 100vw;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+:root{
+    --mainFont{font-family: 'Montserrat';}
+}
     li{
         list-style: none;
     }
@@ -26,41 +31,9 @@
             padding: 10px;
         }
             
-    #home{
+    // #home{
         
-        .swiper {
-            width: 1920px !important;
-            height: 850px !important;
-          }
-    
-          .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: transparent;
-    
-            /* Center slide text vertically */
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            -webkit-justify-content: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            -webkit-align-items: center;
-            align-items: center;
-            background-repeat: no-repeat;
-          }
-    
-        //   .swiper-slide img {
-        //     display: block;
-        //     width: 100%;
-        //     height: 100%;
-        //     object-fit: cover;
-        //   }
-          
-    }
+    // }
+        
     }
 // }

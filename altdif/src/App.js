@@ -2,15 +2,23 @@
 // css
 import './App.css';
 import './css/style.css';
-//js
-// import Swiper from 'swiper';
 //component
 import Home from './component/Home';
+//import Brand from './component/Brand';
+import Product from './component/Product';
+import Play from './component/Play';
+import Review from './component/Review';
+import Footer from './component/Footer';
 
 function App() {
   return (
     <div className="App">
       <Home/>
+      {/* <Brand/> */}
+      <Product/>
+      <Play/>
+      <Review/>
+      <Footer/>
     </div>
   );
 }
