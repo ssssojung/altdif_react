@@ -1,0 +1,50 @@
+{
+    "naviinfo": [
+    {
+        "d1" : "BRAND",
+        "d1link" : "brand.html",
+        "d2" : [
+            
+        ]
+    },
+    {
+        "d1" : "PRODUCT",
+        "d1ID" : "product",
+        "d2" : [
+            {
+                "d2text" : "best"
+            },
+            {
+                "d2text" : "시그니처 블랜딩 티"
+            },
+            {
+                "d2text" : "라이프 블랜딩 티"
+            },
+            {
+                "d2text" : "프리미엄 티"
+            },
+            {
+                "d2text" : "gift & set"
+            }
+
+        ]
+    },
+    {
+        "d1" : "PLAY",
+        "d1ID" : "play",
+        "d2" : [
+            {
+                "d2text" : "알디프 매거진"
+            }   
+        ]
+    },
+    {
+        "d1" : "REVIEW",
+        "d1ID" : "review",
+        "d2" : [
+    
+        ]
+    }
+]
+}
+

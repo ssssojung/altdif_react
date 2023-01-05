@@ -1,0 +1,20 @@
+{
+  "name": "altdif_react",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "scripts": {
+    "server": "server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "front": "cd altdif && npm start",
+    "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run front\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "path": "^0.12.7"
+  }
+}
