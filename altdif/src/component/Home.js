@@ -5,10 +5,10 @@ import Bannerswiper from './Bannerswiper';
 
 function Home(props) {
     return (
-        <div id='home'>
+        <section id='home'>
             <Header keynm='naviinfo'/>
             <Bannerswiper bnI='banner'/>
-        </div>
+        </section>
     );
 }
 

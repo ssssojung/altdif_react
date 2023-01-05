@@ -12,24 +12,28 @@
         [
             {
                 "lsj_proImg" : "../../img/best/best1.jpg",
+                "lsj_prostyle":"width:18vw;",
                 "lsj_proName" : "트라이앵글 티백 샘플러 시그니처 에디션",
                 "lsj_prosummary" : "시그니처 블랜딩 티 12종을 모두 담은 알디프의 오리지널 디자인 트라이앵글 샘플러 시그니처 에디션",
                 "lsj_proPrice" : "25,000원"
             },
             {
                 "lsj_proImg" : "../../img/best/best2.jpg",
+                "lsj_prostyle":"width:18vw;",
                 "lsj_proName" : "비포 선셋-알디프 시그니처 블랜딩 티 8입",
                 "lsj_prosummary" : "(무카페인) 영원히 걷고 싶은 어느 오후, 거리에 비치는 햇살의 맛 카페인 없는 상큼 달콤 자몽 향 허브티-물 대신으로도 좋아요",
                 "lsj_proPrice" : "12,800원"
             },
             {
                 "lsj_proImg" : "../../img/best/best3.jpg",
+                "lsj_prostyle":"width:18vw;",
                 "lsj_proName" : "스페이스 오디티-알디프 시그니처 블랜딩 티 8입",
                 "lsj_prosummary" : "(무카페인) 우주는 무슨 맛일까 밤에 마시기 좋은 무카페인 허브티! 보라에서 핑크로 색이 변하는, 마법같은 #우주차",
                 "lsj_proPrice" : "12,800원"
             },
             {
                 "lsj_proImg" : "../../img/best/best4.jpg",
+                "lsj_prostyle":"width:18vw;",
                 "lsj_proName" : "밀키 애프터이미지-알디프 시그니처 블랜딩 티 8입",
                 "lsj_prosummary" : "달콤한 꿈 뒤에 남은 부드러운 잔상 부드러운 우유향이 깊고 맑은 우롱차와 만난, 고소하고 우아한 블랜딩 티",
                 "lsj_proPrice" : "12,800원"

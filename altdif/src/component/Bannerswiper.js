@@ -10,11 +10,11 @@ import bannerimg from '../json/altdif_lsj.json';
 
 function Bannerswiper(props) {
   const bannerI = bannerimg[0][props.bnI]
-  console.log(bannerI);
+  // console.log(bannerI);/
 
     return (
        //Pagination, 뺐음
-            <Swiper
+            <Swiper className='px-0'
             modules={[Navigation,  Scrollbar, A11y, Autoplay]}
             spaceBetween={50}
             slidesPerView={1}
@@ -31,7 +31,7 @@ function Bannerswiper(props) {
 
 bannerI.map((item, index)=>{
   return(
-<SwiperSlide><img src={item.bannerImg} alt="" /></SwiperSlide>
+<SwiperSlide><img src={item.bannerImg} alt="mainbannerI"/></SwiperSlide>
   )
 
 })

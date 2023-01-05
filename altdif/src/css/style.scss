@@ -2,6 +2,10 @@
 //     min-width: 100vw;
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
 
+//공통클래스
+.PL{
+    padding-left: 80rem;
+}
 :root{
     --mainFont{font-family: 'Montserrat';}
 }
@@ -34,6 +38,9 @@
     // #home{
         
     // }
+    #product{
+        
+    }
         
     }
 // }
