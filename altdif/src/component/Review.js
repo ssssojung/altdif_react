@@ -2,9 +2,9 @@ import React from 'react';
 
 function Review(props) {
     return (
-        <div>
+        <section id='review'>
             
-        </div>
+        </section>
     );
 }
 

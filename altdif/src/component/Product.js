@@ -9,8 +9,21 @@ function Product(props) {
                  <span>베스트상품을 지금 바로 만나보세요</span>
              </div>
              <div className='d-flex'>
-             <Best best='best'/>
+                <div className='col-10 d-flex'>
+                 <Best best='best'/>
+                </div>
+                <div class="flow-container col-2">
+                    <div class="flow-text ">
+                        <div class="flow-wrap">We Blend Life, altdif</div>
+                        <div class="flow-wrap">We Blend Life, altdif</div>
+                        <div class="flow-wrap">We Blend Life, altdif</div>
+                        <div class="flow-wrap">We Blend Life, altdif</div>
+                    </div>
+                </div>
              </div>
+            <style>
+
+            </style>
       </section>
     );
    

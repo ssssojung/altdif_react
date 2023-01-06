@@ -7,8 +7,9 @@ function best(props) {
     return (
         bestPro.map((item,index) => {
             return(
-                <div className='col-2'>
-                    <img src={item.lsj_proImg} alt='bestitemI'/>
+                
+                <div className='col-3'>
+                    <img className='18vw'src={item.lsj_proImg} alt='bestitemI'/>
                     <p>{item.lsj_proName}</p>
                     <p>{item.lsj_prosummary}</p>
                     <p>{item.lsj_proPrice}</p>

@@ -2,9 +2,9 @@ import React from 'react';
 
 function Play(props) {
     return (
-        <div>
-            
-        </div>
+        <section id='play'>
+            플레이
+        </section>
     );
 }
 

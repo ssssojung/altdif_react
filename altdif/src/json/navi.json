@@ -1,13 +1,6 @@
 {
     "naviinfo": [
     {
-        "d1" : "BRAND",
-        "d1link" : "brand.html",
-        "d2" : [
-            
-        ]
-    },
-    {
         "d1" : "PRODUCT",
         "d1ID" : "product",
         "d2" : [
@@ -27,6 +20,13 @@
                 "d2text" : "gift & set"
             }
 
+        ]
+    },
+    {
+        "d1" : "BRAND",
+        "d1ID" : "brand",
+        "d2" : [
+            
         ]
     },
     {

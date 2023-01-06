@@ -2,9 +2,9 @@ import React from 'react';
 
 function Footer(props) {
     return (
-        <div>
-            
-        </div>
+        <section id='footer'>
+            푸터
+        </section>
     );
 }
 

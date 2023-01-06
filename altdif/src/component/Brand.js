@@ -2,9 +2,9 @@ import React from 'react';
 
 function Brand(props) {
     return (
-        <div>
-            
-        </div>
+        <section id='brand' >
+            브랜드 
+        </section>
     );
 }
 
