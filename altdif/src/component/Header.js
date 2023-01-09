@@ -49,7 +49,7 @@ function Header(props) {
              <li><a href="#">CART</a></li>
              <li><a href="#">ORDER</a></li>
              <li><a href="#">MY PAGE</a></li>
-             <li><a href="#">검색</a></li>
+             <li><a href="#"><img src="../../img/search_icon.png" alt="search_icon" /></a></li>
         </ul>
         </div>
     );

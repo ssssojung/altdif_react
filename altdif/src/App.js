@@ -16,7 +16,7 @@ function App() {
       <Home/>
       <Product/>
       <Brand/>
-      <Play/>
+      <Play reI='playRe'/>
       <Review/>
       <Footer/>
     </div>

@@ -8,18 +8,19 @@ import 'swiper/css/scrollbar';
 import bannerimg from '../json/altdif_lsj.json';
 
 
+
 function Bannerswiper(props) {
   const bannerI = bannerimg[0][props.bnI]
   // console.log(bannerI);/
 
     return (
        //Pagination, 뺐음
-            <Swiper className='px-0'
-            modules={[Navigation,  Scrollbar, A11y, Autoplay]}
-            spaceBetween={50}
+            <Swiper className='px-0' id='Bannerswiper'
+            modules={[ Scrollbar, A11y, Autoplay]}
+            spaceBetween={0}
             slidesPerView={1}
-            navigation
-            pagination={{ clickable: true }}
+            // navigation
+            // pagination={{ clickable: true }}
             scrollbar={{ draggable: true }}
             autoplay={{
                 delay: 2500,
@@ -31,19 +32,16 @@ function Bannerswiper(props) {
 
 bannerI.map((item, index)=>{
   return(
-<SwiperSlide><img src={item.bannerImg} alt="mainbannerI"/></SwiperSlide>
+<SwiperSlide >
+  <div id='swiperI'style={{ backgroundImage : `url(${item.bannerImg})`, height:"100vh" }}>
+
+  </div>
+  
+  </SwiperSlide>
   )
 
 })
           }
-             
-                
-               
-           
-             
-             
-              
-              
             </Swiper>
          
     );

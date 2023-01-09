@@ -2,7 +2,7 @@
     "naviinfo": [
     {
         "d1" : "PRODUCT",
-        "d1ID" : "product",
+        "d1link" : "#product",
         "d2" : [
             {
                 "d2text" : "best"
@@ -24,14 +24,14 @@
     },
     {
         "d1" : "BRAND",
-        "d1ID" : "brand",
+        "d1link" : "#brand",
         "d2" : [
             
         ]
     },
     {
         "d1" : "PLAY",
-        "d1ID" : "play",
+        "d1link" : "#play",
         "d2" : [
             {
                 "d2text" : "알디프 매거진"
@@ -40,7 +40,7 @@
     },
     {
         "d1" : "REVIEW",
-        "d1ID" : "review",
+        "d1link" : "#review",
         "d2" : [
     
         ]

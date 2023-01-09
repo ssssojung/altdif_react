@@ -1,32 +1,57 @@
-body{
+// body{
 //     min-width: 100vw;
+// @font-face {
+//   font-family: 'GothicA1-Light';
+//   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GothicA1-Light.woff2') format('woff2');
+//   font-weight: 300;
+//   font-style: normal;
+// };
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
-
-
 :root{
   // font
   --main-font:'Montserrat';
-  
+  --kor-font:'GangwonEdu_OTFBoldA';
   // color
   
 }
 //공통클래스
 section{
-    // min-height:100vw;
     min-height: auto;
 }
 h2{
   font-family: var(--main-font);
   font-weight: bold;
 }
-    li{
+p{
+  font-family: var(--kor-font);
+  span{font-family: var(--main-font);font-weight: bold;color: #9D9993;}
+}
+li{
         list-style: none;
     }
     a{
         text-decoration: none;
         color: black;
     }
-    #hd{
+.titletxt{
+  display: flex;
+  flex-direction :column;
+  h2{
+    font-family: var(--main-font);
+    font-weight: bold;
+  }
+  span{
+    font-family: var(--kor-font);
+    color: #9D9993;
+  }
+}
+  #hd{
         z-index: 10000;
         width: 100vw;
         background: rgba(255, 255, 255, 0.611);
@@ -45,44 +70,70 @@ h2{
         a{
             padding: 10px;
             font-family:var(--main-font);
+            font-weight: bold;
         }
     }
-    .flow-text {
-        display: flex;
-        flex: 0 0 auto;
-        white-space: nowrap;
-        overflow: hidden;
-        transition: 0.3s;
-        font-size: 13.5rem;
-        font-weight:bold;
-        color: #9D9993;
-        transform: rotate(90deg);
-        margin: 0 -475px 0 -380px;
-        
+    #swiperI{
+      height: 100vh;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
-    .flow-text:hover {
-        -webkit-text-stroke: 1px#7A00FD ;
-        color: transparent;
-    }
-    .flow-text:hover .flow-wrap {
-      animation-play-state: paused;
-      cursor: pointer;
-    }
-    .flow-wrap {
-      animation: textLoop 15s linear infinite;
-      padding-right: 1.4881vw;
+   
+    #product{
+      .textB{
+        // padding: 40px 18px;
+        min-height: 110px;
+        padding-top: 40px;
+        // padding-right: 18px;
+        p{
+          line-height: 30px;
+        }
+      }
+      h5{
+        font-family: var(--kor-font);
+        font-weight: bold;
+        font-size: 1.3rem;
+      }
+
+      .flow-text {
+          display: flex;
+          flex: 0 0 auto;
+          white-space: nowrap;
+          overflow: hidden;
+          transition: 0.3s;
+          font-size: 13.5rem;
+          font-weight:bold;
+          -webkit-text-stroke: 1px#7A00FD ;
+          color: transparent;
+          transform: rotate(90deg);
+          margin: 0 -475px 0 -380px;
+          
+      }
+      .flow-text:hover {
+        -webkit-text-stroke: transparent ;
+          color: #9D9993;
+      }
+      .flow-text:hover .flow-wrap {
+        animation-play-state: paused;
+        cursor: pointer;
+      }
+      .flow-wrap {
+        animation: textLoop 15s linear infinite;
+        padding-right: 1.4881vw;
+      }
+      
+      @keyframes textLoop {
+        0% {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+        }
+      } 
     }
     
-    @keyframes textLoop {
-      0% {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-      }
-      100% {
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-      }
-    }
     #brand{
       width: 100%;
       height: auto;
@@ -101,6 +152,7 @@ h2{
         text-align: center;
         
         p{
+          font-size: 1.1rem;
           letter-spacing: -1px;
           line-height: 2.5rem;
           padding: 30px 0;
@@ -108,8 +160,65 @@ h2{
       }
     }
     #play{
-      padding: 260px 0;
       background-color: #e6e2f5;
+      .p{
+        padding:200px  ;
+      }
+        
+      
+      .playBox{
+        background-color: #fff;
+        padding: 60px;
+        
+        position: relative;
+          .titletxt>img{
+            width: 310px;
+          position: absolute;
+          top: 170px;
+          border-radius: 50%;
+          }
+          .recipeImg{
+          width: 80%;
+          margin-bottom: 30px;
+          }
+          .textB{
+            text-align: center;
+            margin-left: 35px;
+            width: 80%;
+            font-size: 1.1rem;
+            span{
+              font-family:var(--kor-font) ;
+              padding: 7px 10px;
+              border-radius: 50px;
+              // position: relative;
+              a{color:#7659B1;}
+
+            }
+          // 밑줄 애니메이션 넣기
+          // a:after{
+          //   content: '';
+          //   position: absolute;
+          //   bottom: -2px;
+          //   left: 0;
+          //   width: 0;
+          //   height: 20%;
+          //   background-color: #e6e2f5;
+          //   z-index: -1;
+          // }
+          // a:hover:after{width: 100%;}
+          
+        }
+      }
+        .h_playBox{
+          background-color: #fff;
+          padding: 60px;
+          margin: 0;
+          width: 800px;
+        }
+      
     }
     
-}
+    #review{
+      padding: 200px 0;
+    }
+// }

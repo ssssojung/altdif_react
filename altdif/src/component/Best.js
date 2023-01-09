@@ -10,9 +10,12 @@ function best(props) {
                 
                 <div className='col-3'>
                     <img className='18vw'src={item.lsj_proImg} alt='bestitemI'/>
-                    <p>{item.lsj_proName}</p>
-                    <p>{item.lsj_prosummary}</p>
-                    <p>{item.lsj_proPrice}</p>
+                    <div className='textB'>
+                        <h5>{item.lsj_proName}</h5>
+                        <p>{item.lsj_prosummary}</p>
+                        <p>{item.lsj_proPrice}</p>
+                    </div>
+                    
                 </div>
             )
         })
