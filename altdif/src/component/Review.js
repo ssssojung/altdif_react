@@ -7,11 +7,11 @@ function Review(props) {
     return (
         <section id='review'>
             <div className='container'>
-                <div className='d-flex row'>
+                <div className='row'>
                     {
                         review.map((item, index)=>{ 
                             return(
-                                <div className='col reviewB'>
+                                <div className='col-4 reviewB'>
                                     <img className='revI'src={item.reviewImg} alt="reviewImg" />
                                     <p>{item.reviewTitle}</p>
                                     <p>{item.reviewsummary}</p>

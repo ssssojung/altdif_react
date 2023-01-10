@@ -52,6 +52,25 @@ li{
     color: #9D9993;
   }
 }
+  #promotionBanner{
+    
+    top: 20px;
+    right: 80px;
+    width: 100%;
+    text-align: center;
+    background: #A2B1C6;
+    color: #000;
+    font-size: 18px;
+    .bannerLink{
+      display: block;
+      padding: 20px 0;
+    }
+    .btnClose{
+      position: absolute;
+      top: 20px;
+      right: 80px;
+    }
+  }
   #hd{
         z-index: 10000;
         width: 100vw;
@@ -81,6 +100,12 @@ li{
     }
    
     #product{
+      .best{
+        margin-right: 30px;
+      }
+      .productI{
+        width: 100%;
+      }
       .textB{
         // padding: 40px 18px;
         min-height: 110px;
@@ -107,7 +132,7 @@ li{
           -webkit-text-stroke: 1px#7A00FD ;
           color: transparent;
           transform: rotate(90deg);
-          margin: 0 -475px 0 -380px;
+          // margin: 0 -498px 0 -240px;
           
       }
       .flow-text:hover {
@@ -254,6 +279,27 @@ li{
         }
         
       }
+      .tea_test img{
+        width: 80%;
+      }
+      // .tea_test>img:hover .tea_test{
+      //   background-color: #7a00fd87;
+      //   backdrop-filter: blur(8px);
+      //   z-index: 100;
+      //이미지를 hover 했을 때 블러배경 올라오게 구현
+      // }
+        .tea_blur{
+          width: 100%;
+          height: 100%;
+          // background-color: rgb(243 96 122 / 30%);
+          // background-color: #e6e2f595;
+          background-color: rgba(255, 255, 255, 0.803);
+          backdrop-filter: blur(8px);
+          top: 0;
+          position: absolute;
+          left: 0;
+         }
+
       
     }
     
@@ -262,11 +308,10 @@ li{
       .reviewB{
         cursor: pointer;
         position: relative;
-        width: 20%;
+        width: 23%;
         vertical-align: top;
-
         padding: 0 0 30px;
-        margin: 0 10px 30px;
+        margin: 0 13px 30px;
         border: 1px solid #e1e1e1;
       }
       .revI{
@@ -294,7 +339,7 @@ li{
             color: #7A00FD;
 
           }  
-        right: 20px !important;
+        right: 40px !important;
         background: rgba(255,255,255,0.5);
         padding: 20px 5px;
         border-radius: 30px;

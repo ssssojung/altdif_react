@@ -13,7 +13,7 @@ function Play(props) {
     return (
         <section id='play' className=''>
             
-            <div className='d-flex row p'>
+            <div className='d-flex row p mx-0'>
                 
                 <div className=' d-flex playBox '>
                     <div className='col-4 align-items-center pb-5 titletxt '>
@@ -66,9 +66,15 @@ function Play(props) {
 
                 </div>
 
-                {/* <div className=' col-md-12 col-5 h_playBox mt-5 ' >
-                    인터뷰
-                </div> */}
+                <div className='col-md-5 col-12 playBox mt-5 bg-white me-5 tea_test' >
+                    <a href="https://altdif.com/miraclemoment/index.html">
+                        <img src="../../img/play/tea_test.jpg" alt="tea_test"/>
+                    </a>
+                    <div className='tea_blur'><img src="../../img/play/altdif.png" alt="" /></div>
+                </div>
+                <div className='col-md-7 col-12 playBox mt-5 bg-white' style={{width:"44.1vw"}}>
+                    만드는 중에 힘들었던거 쓰기
+                </div>
             </div>
         </section>
         
