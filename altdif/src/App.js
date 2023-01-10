@@ -9,7 +9,7 @@ import Product from './component/Product';
 import Play from './component/Play';
 import Review from './component/Review';
 import Footer from './component/Footer';
-
+import Menu from './component/Menu';
 function App() {
   return(
     <div className="App">
@@ -17,8 +17,9 @@ function App() {
       <Product/>
       <Brand/>
       <Play reI='playRe'/>
-      <Review/>
+      <Review rev='review'/>
       <Footer/>
+      <Menu/>
     </div>
   );
 }

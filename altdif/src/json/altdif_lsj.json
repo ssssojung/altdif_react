@@ -94,36 +94,37 @@
     {"review":
         [
             {
-                "reviewImg" : "../../img/banner/mainbn_1.jpg",
+                "reviewImg" : "../../img/review/review1.jpeg",
                 "reviewTitle" : "[12월 베스트리뷰]",
                 "reviewsummary" : "만족합니다! 그리고 예뻐요!"
             },
             {
-                "reviewImg" : "../../img/banner/mainbn_1.jpg",
+                "reviewImg" : "../../img/review/review2.jpeg",
                 "reviewTitle" : "만족",
                 "reviewsummary" : "무카페인이라서 너무 좋네요ㅎㅎ"
             },
             {
-                "reviewImg" : "../../img/banner/mainbn_1.jpg",
+                "reviewImg" : "../../img/review/review3.jpg",
                 "reviewTitle" : "잘 받았습니다",
                 "reviewsummary" : "맛이 다양해서 좋습니다"
             },
             {
-                "reviewImg" : "../../img/banner/mainbn_1.jpg",
+                "reviewImg" : "../../img/review/review4.jpg",
                 "reviewTitle" : "디자인",
                 "reviewsummary" : "선물용으로 적당해요"
             },
             {
-                "reviewImg" : "../../img/banner/mainbn_1.jpg",
+                "reviewImg" : "../../img/review/review5.jpg",
                 "reviewTitle" : "회원가입 이벤트",
                 "reviewsummary" : "골고루 보내주셔서 좋아요"
             },
             {
-                "reviewImg" : "../../img/banner/mainbn_1.jpg",
+                "reviewImg" : "../../img/review/review6.jpeg",
                 "reviewTitle" : "만족",
                 "reviewsummary" : "항상 맛있게 먹고 있습니다"
-            },{
-                "reviewImg" : "../../img/banner/mainbn_1.jpg",
+            },
+            {
+                "reviewImg" : "../../img/review/review7.jpeg",
                 "reviewTitle" : "포장도 깔끔",
                 "reviewsummary" : "샘플러 구성까지 완벽해요"
             }

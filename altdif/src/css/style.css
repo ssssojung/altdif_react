@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap");
 @font-face {
   font-family: "GangwonEdu_OTFBoldA";
@@ -54,6 +55,7 @@ a {
   z-index: 10000;
   width: 100vw;
   background: rgba(255, 255, 255, 0.611);
+  backdrop-filter: blur(8px);
 }
 #hd .shadow {
   -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -160,7 +162,7 @@ a {
   position: relative;
 }
 #play .playBox .titletxt > img {
-  width: 310px;
+  width: 19rem;
   position: absolute;
   top: 170px;
   border-radius: 50%;
@@ -183,13 +185,95 @@ a {
 #play .playBox .textB span a {
   color: #7659B1;
 }
-#play .h_playBox {
-  background-color: #fff;
-  padding: 60px;
-  margin: 0;
-  width: 800px;
+#play .bgstyle {
+  background-image: url(../../public/img/play/youtube.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 80vh;
+  padding: 247px 0;
+}
+#play .bgstyle .YT_pop {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #686169;
+  font-family: var(--kor-font);
+}
+#play .bgstyle .YT_pop a {
+  color: #686169;
+  font-family: "Nanum gothic";
+}
+#play .bgstyle .YT_pop .YT_Title {
+  font-family: "Nanum gothic";
+  font-size: 7rem;
+}
+#play .bgstyle .YT_pop .YT_info {
+  margin-top: 20px;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.68;
+}
+#play .bgstyle .YT_pop .YT_sub {
+  margin-top: 8px;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+#play .bgstyle .YT_pop i:hover {
+  color: red;
+  cursor: pointer;
+}
+#play .bgstyle .YT_pop .xi-youtube-play:before {
+  font-size: 7rem;
 }
 
 #review {
   padding: 200px 0;
+}
+#review .reviewB {
+  cursor: pointer;
+  position: relative;
+  width: 20%;
+  vertical-align: top;
+  padding: 0 0 30px;
+  margin: 0 10px 30px;
+  border: 1px solid #e1e1e1;
+}
+#review .revI {
+  width: 100%;
+  overflow: hidden;
+}
+
+#Menu .btnTop {
+  position: fixed;
+  bottom: 40px;
+  right: 0.2%;
+  width: 50px;
+  display: block;
+  text-align: center;
+  z-index: 9999;
+  font-size: 11px;
+  right: 20px !important;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 20px 5px;
+  border-radius: 30px;
+}
+#Menu .btnTop a {
+  color: black;
+  font-family: var(--main-font);
+}
+#Menu .btnTop div > a:hover {
+  color: #7A00FD;
+}
+#Menu .btnTop .divider {
+  background: #000;
+  width: 100%;
+  height: 1px;
+  margin: 20px 0;
+}
+#Menu .btnTop > div {
+  cursor: pointer;
 }

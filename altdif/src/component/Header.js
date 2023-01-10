@@ -16,7 +16,9 @@ function Header(props) {
     return (
         <div id='hd' className='position-fixed p-3 d-flex align-items-center shadow'>
             <h2 className='col justify-content-start d-flex'>
-                <img className='ps-5' src="../../../img/logo.png" alt="logo"/>
+                <a href="#home">
+                    <img className='ps-5' src="../../../img/logo.png" alt="logo"/>
+                </a>
             </h2>
         <ul id="nav" className='col d-flex justify-content-center'>
             {

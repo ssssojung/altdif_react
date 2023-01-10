@@ -6,6 +6,7 @@
 //   font-weight: 300;
 //   font-style: normal;
 // };
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap');
 @font-face {
   font-family: 'GangwonEdu_OTFBoldA';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
@@ -55,7 +56,7 @@ li{
         z-index: 10000;
         width: 100vw;
         background: rgba(255, 255, 255, 0.611);
-        
+        backdrop-filter: blur(8px);
         .shadow{
             -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
             -moz-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
@@ -169,17 +170,16 @@ li{
       .playBox{
         background-color: #fff;
         padding: 60px;
-        
         position: relative;
           .titletxt>img{
-            width: 310px;
-          position: absolute;
-          top: 170px;
-          border-radius: 50%;
+            width: 19rem;
+            position: absolute;
+            top: 170px;
+            border-radius: 50%;
           }
           .recipeImg{
-          width: 80%;
-          margin-bottom: 30px;
+            width: 80%;
+            margin-bottom: 30px;
           }
           .textB{
             text-align: center;
@@ -209,16 +209,105 @@ li{
           
         }
       }
-        .h_playBox{
-          background-color: #fff;
-          padding: 60px;
-          margin: 0;
-          width: 800px;
+      .bgstyle{
+        background-image: url(../../public/img/play/youtube.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100vw;height: 80vh;
+        padding: 247px 0;
+        .YT_pop{
+          position: absolute;
+          left: 0;right: 0;
+          margin: 0 auto;
+          color: #686169;
+          font-family: var(--kor-font);
+
+          
+          a{
+            color: #686169;
+            font-family: 'Nanum gothic';
+          }
+          .YT_Title{
+            font-family: 'Nanum gothic';
+            font-size: 7rem;
+          }
+          .YT_info{
+            margin-top: 20px;
+            font-size: 30px;
+            font-weight: 400;
+            letter-spacing: 0.03em;
+            line-height: 1.68;
+          }
+          .YT_sub{
+            margin-top: 8px;
+            font-size: 18px;
+            letter-spacing: 0.02em;
+            line-height: 1.5;
+          }
+          i:hover{
+            color: red;
+            cursor: pointer;
+          }
+          .xi-youtube-play:before {
+            font-size: 7rem;
+          }
         }
+        
+      }
       
     }
     
     #review{
       padding: 200px 0;
+      .reviewB{
+        cursor: pointer;
+        position: relative;
+        width: 20%;
+        vertical-align: top;
+
+        padding: 0 0 30px;
+        margin: 0 10px 30px;
+        border: 1px solid #e1e1e1;
+      }
+      .revI{
+        width: 100%;
+        overflow: hidden;
+      }
     }
+
+    #Menu{
+      .btnTop {
+        position: fixed;
+        bottom: 40px;
+        right: 0.2%;
+        width: 50px;
+        display: block;
+        text-align: center;
+        z-index: 9999;
+        font-size: 11px;
+          a{
+            // color: #000 ;
+            color: black;
+            font-family: var(--main-font);
+          }
+          div>a:hover{
+            color: #7A00FD;
+
+          }  
+        right: 20px !important;
+        background: rgba(255,255,255,0.5);
+        padding: 20px 5px;
+        border-radius: 30px;
+      }
+      .btnTop .divider {
+        background: #000;
+        width: 100%;
+        height: 1px;
+        margin: 20px 0;
+      }
+      .btnTop > div {
+        cursor: pointer;
+      }
+    }
+
 // }

@@ -30,17 +30,17 @@ function Bannerswiper(props) {
 
           {
 
-bannerI.map((item, index)=>{
-  return(
-<SwiperSlide >
-  <div id='swiperI'style={{ backgroundImage : `url(${item.bannerImg})`, height:"100vh" }}>
+            bannerI.map((item, index)=>{
+              return(
+            <SwiperSlide >
+              <div id='swiperI'style={{ backgroundImage : `url(${item.bannerImg})`, height:"100vh" }}>
 
-  </div>
-  
-  </SwiperSlide>
-  )
+              </div>
+              
+              </SwiperSlide>
+              )
 
-})
+            })
           }
             </Swiper>
          
