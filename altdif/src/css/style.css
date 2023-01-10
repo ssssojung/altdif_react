@@ -217,7 +217,7 @@ a {
   height: 80vh;
   padding: 247px 0;
 }
-#play .bgstyle .YT_pop {
+#play .bgstyle .YT {
   position: absolute;
   left: 0;
   right: 0;
@@ -225,45 +225,88 @@ a {
   color: #686169;
   font-family: var(--kor-font);
 }
-#play .bgstyle .YT_pop a {
+#play .bgstyle .YT a {
   color: #686169;
   font-family: "Nanum gothic";
 }
-#play .bgstyle .YT_pop .YT_Title {
+#play .bgstyle .YT .YT_Title {
   font-family: "Nanum gothic";
   font-size: 7rem;
 }
-#play .bgstyle .YT_pop .YT_info {
+#play .bgstyle .YT .YT_info {
   margin-top: 20px;
   font-size: 30px;
   font-weight: 400;
   letter-spacing: 0.03em;
   line-height: 1.68;
 }
-#play .bgstyle .YT_pop .YT_sub {
+#play .bgstyle .YT .YT_sub {
   margin-top: 8px;
   font-size: 18px;
   letter-spacing: 0.02em;
   line-height: 1.5;
 }
-#play .bgstyle .YT_pop i:hover {
+#play .bgstyle .YT i:hover {
   color: red;
   cursor: pointer;
 }
-#play .bgstyle .YT_pop .xi-youtube-play:before {
+#play .bgstyle .YT .xi-youtube-play:before {
   font-size: 7rem;
+}
+#play .bgstyle .YT .YT_pop {
+  background: rgba(0, 0, 0, 0.5098039216);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20000;
+}
+#play .bgstyle .YT .YT_pop .YT_modal {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  width: 40%;
+  height: 50%;
+}
+#play .bgstyle .YT .YT_pop .YT_modal a {
+  font-size: 2rem;
+  color: #e6e2f5;
+  position: absolute;
+  right: 60px;
+  top: -55px;
+  font-family: var(--main-font);
+}
+#play .bgstyle .YT .YT_pop .YT_modal i {
+  font-size: 2.5rem;
+  color: #e6e2f5;
+  position: absolute;
+  right: 0;
+  top: -48px;
+  transition: transform 0.25s ease;
+}
+#play .bgstyle .YT .YT_pop .YT_modal i:hover {
+  transform: rotate(90deg);
+}
+#play .bgstyle .YT .YT_pop .YT_modal iframe {
+  width: 100%;
+  height: 100%;
 }
 #play .tea_test img {
   width: 80%;
 }
 #play .tea_blur {
+  display: none;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.803);
+  background-color: rgba(230, 226, 245, 0.5843137255);
   backdrop-filter: blur(8px);
   top: 0;
   position: absolute;
   left: 0;
+}
+#play .tea_test > a:hover .tea_blur {
+  display: inline-block;
 }
 
 #review {
@@ -290,7 +333,7 @@ a {
   width: 50px;
   display: block;
   text-align: center;
-  z-index: 9999;
+  z-index: 10000;
   font-size: 11px;
   right: 40px !important;
   background: rgba(255, 255, 255, 0.5);
@@ -312,4 +355,8 @@ a {
 }
 #Menu .btnTop > div {
   cursor: pointer;
+}
+
+.ytp-chrome-top-buttons {
+  display: none !important;
 }
