@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import Popup from './Popup';
+import Modalbasic from './Modalbasic';
 import { Swiper,SwiperSlide} from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
@@ -7,12 +7,11 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import recipe from '../json/altdif_lsj.json';
+import '../css/style.scss';
 
 function Play(props) {
-    const recipeI = recipe[2][props.reI]
-    // export default function FullPageLanding(){
-    //     const [popup, setPopup] = useState(true);
-    // }
+const playRe = recipe[2][props.reI]
+// console.log(playRe);
     return (
         <section id='play' className=''>
             
@@ -30,12 +29,12 @@ function Play(props) {
                             spaceBetween={30}
                             // pagination={{clickable: true,}}
                             autoplay={{
-                            delay: 10000,
+                            delay: 2500,
                             disableOnInteraction: false,
                             }}
                         >
                         {
-                        recipeI.map((item, index)=>{
+                        playRe.map((item, index)=>{
                             return(
                             <SwiperSlide>
                                 <div className=''>
@@ -57,32 +56,20 @@ function Play(props) {
                 </div>
 
                 <div className=' col-12 playBox mt-5 bgstyle'>
-                    
-                    <div class="YT text-center">
-                        <h2 class="YT_Title">YOUTUBE</h2>
-                        <div class="YT_info bs_txt_title_01">최신 소식을 유튜브에서 확인해보세요!</div>
-                        <div class="YT_sub bs_txt_title_01">#차 실험실 #혼돈의 홈카페</div>
-                        {/* <div class="YT_btn_more d-none"><a href="#none" target="_brank">MORE</a></div> */}
-                        <div class="bs_btn_youtube">
-                        {/* {popup ? <Popup onClose={setPopup} /> : null} */}
-                            <a href ="" >
-                                <i class="js-modal-btn1 xi-youtube-play" data-video-id="jVr8MjdazUk"></i>
-                            </a>
-                        </div> 
-                        {/* data-video-id 의 값을 영상 아이디로 변경 */}
-                    </div>
-
+                    <Modalbasic/>
                 </div>
-
+                
                 <div className='col-md-5 col-12 playBox mt-5 bg-white me-5 tea_test' >
                     <a href="https://altdif.com/miraclemoment/index.html">
                         <img src="../../img/play/tea_test.jpg" alt="tea_test"/>
                         <div className='tea_blur'><img src="../../img/play/altdif.png" alt="" /></div>
                     </a>
-                </div>
+                </div> 
+                
                 <div className='col-md-7 col-12 playBox mt-5 bg-white' style={{width:"44.1vw"}}>
-                    만드는 중에 힘들었던거 쓰기
+                    만드는 중에힘들었던거 쓰기
                 </div>
+                
             </div>
         </section>
         

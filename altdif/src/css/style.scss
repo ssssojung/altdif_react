@@ -276,57 +276,14 @@ li{
           .xi-youtube-play:before {
             font-size: 7rem;
           }
-        .YT_pop{
-          background: #00000082;
-          width: 100vw;
-          height: 100vh;
-          position: fixed;
-          top: 0;
-          left: 0;
-          z-index: 20000;
-          .YT_modal{
-            position: absolute;
-            top: 30%;
-            left: 30%;
-            width: 40%;
-            height: 50%;
-            a{
-              font-size: 2rem;
-              color: #e6e2f5;
-              position: absolute;
-              right: 60px;top: -55px;
-              font-family: var(--main-font);
-            }
-            i{
-              font-size: 2.5rem;
-              color: #e6e2f5;
-              position: absolute;
-              right: 0;top: -48px;
-              transition: transform 0.25s ease;
-            }
-            i:hover{
-              transform: rotate(90deg);
-            }
-            iframe{
-              width: 100%;
-              height: 100%;
-            }
-            
-          }
         }
-        }
-        
-        
+       
       }
+    
+        
       .tea_test img{
         width: 80%;
       }
-      // .tea_test>img:hover .tea_test{
-      //   background-color: #7a00fd87;
-      //   backdrop-filter: blur(8px);
-      //   z-index: 100;
-      //이미지를 hover 했을 때 블러배경 올라오게 구현
-      // }
         .tea_blur{
           display: none;
           width: 100%;
@@ -340,8 +297,6 @@ li{
           left: 0;
          }
          .tea_test>a:hover .tea_blur{ display: inline-block}
-
-      
     }
     
     
@@ -399,5 +354,6 @@ li{
     .ytp-chrome-top-buttons{
       display: none !important;
     }
+    
 
 // }

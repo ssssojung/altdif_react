@@ -1,16 +1,20 @@
 import React,{useState} from 'react';
+import '../css/popup.scss';
 
-
-function Popup (props) {
-    const {onClose} = props;
+function Popup ({setModalOpen}) {
+    const closeModal = () => {
+        setModalOpen(false);
+    }
     return (
-        <div className='YT_pop'>
-            <div className='YT_modal'>
-                <a href="https://www.youtube.com/@ALTDIFTV">more</a>
-                <i className='xi-close-thin' onClick={()=>{onClose(false)}}></i>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/sTbJHauqx_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+       <div>
+            <div id='YT_pop'>
+                <div className='YT_modal '>
+                    <a className='more' href="https://www.youtube.com/@ALTDIFTV"  onClick={closeModal}>more</a>
+                    <a onClick={closeModal}><i  className='xi-close-thin'></i></a>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/sTbJHauqx_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
             </div>
-        </div>
+       </div>
     );
 }
 
