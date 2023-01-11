@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import '../css/popup.scss';
+import '../../css/popup.scss';
 
 function Popup ({setModalOpen}) {
     const closeModal = () => {

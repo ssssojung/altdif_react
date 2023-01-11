@@ -1,5 +1,5 @@
 import React from 'react';
-import navi from '../json/navi.json';
+import navi from '../../json/navi.json';
 function Header(props) {
     const naviDb = navi[props.keynm]
         // let navi = '';

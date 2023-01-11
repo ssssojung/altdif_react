@@ -1,5 +1,5 @@
 import React from 'react';
-import PromotionBanner from './PromotionBanner';
+import PromotionBanner from '../PromotionBanner';
 import Header from './Header';
 import Bannerswiper from './Bannerswiper';
 

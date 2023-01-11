@@ -18,11 +18,11 @@ function Modalbasic(props) {
                     <a onClick={showModal} >
                         <i class="js-modal-btn1 xi-youtube-play" data-video-id="jVr8MjdazUk"></i>
                     </a>
-                    {modalOpen && <Popup setModalOpen={setModalOpen}/>}
+                    
                 </div> 
                 {/* data-video-id 의 값을 영상 아이디로 변경 */}
             </div>
-
+            {modalOpen && <Popup setModalOpen={setModalOpen}/>}
           
 
         </div>

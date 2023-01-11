@@ -52,6 +52,9 @@ li{
     color: #9D9993;
   }
 }
+.p{
+  padding:200px  ;
+}
   #promotionBanner{
     
     top: 20px;
@@ -93,11 +96,7 @@ li{
             font-weight: bold;
         }
     }
-    #swiperI{
-      height: 100vh;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
+    
    
     #product{
       .best{
@@ -187,10 +186,6 @@ li{
     }
     #play{
       background-color: #e6e2f5;
-      .p{
-        padding:200px  ;
-      }
-        
       
       .playBox{
         background-color: #fff;
@@ -202,38 +197,8 @@ li{
             top: 170px;
             border-radius: 50%;
           }
-          .recipeImg{
-            width: 80%;
-            margin-bottom: 30px;
-          }
-          .textB{
-            text-align: center;
-            margin-left: 35px;
-            width: 80%;
-            font-size: 1.1rem;
-            span{
-              font-family:var(--kor-font) ;
-              padding: 7px 10px;
-              border-radius: 50px;
-              // position: relative;
-              a{color:#7659B1;}
-
-            }
-          // 밑줄 애니메이션 넣기
-          // a:after{
-          //   content: '';
-          //   position: absolute;
-          //   bottom: -2px;
-          //   left: 0;
-          //   width: 0;
-          //   height: 20%;
-          //   background-color: #e6e2f5;
-          //   z-index: -1;
-          // }
-          // a:hover:after{width: 100%;}
-          
-        }
       }
+      //유튜브
       .bgstyle{
         background-image: url(../../public/img/play/youtube.jpg);
         background-size: cover;
@@ -246,8 +211,6 @@ li{
           margin: 0 auto;
           color: #686169;
           font-family: var(--kor-font);
-
-          
           a{
             color: #686169;
             font-family: 'Nanum gothic';
@@ -279,8 +242,6 @@ li{
         }
        
       }
-    
-        
       .tea_test img{
         width: 80%;
       }
@@ -288,9 +249,7 @@ li{
           display: none;
           width: 100%;
           height: 100%;
-          // background-color: rgb(243 96 122 / 30%);
           background-color: #e6e2f595;
-          //background-color: rgba(255, 255, 255, 0.803);
           backdrop-filter: blur(8px);
           top: 0;
           position: absolute;
@@ -302,18 +261,10 @@ li{
     
     #review{
       padding: 200px 0;
-      .reviewB{
-        cursor: pointer;
-        position: relative;
-        width: 23%;
-        vertical-align: top;
-        padding: 0 0 30px;
-        margin: 0 13px 30px;
-        border: 1px solid #e1e1e1;
-      }
-      .revI{
-        width: 100%;
-        overflow: hidden;
+      background-color: #ECECEC;
+      .reviewBox{
+        background-color: #fff;
+        padding: 60px;
       }
     }
 
@@ -350,9 +301,6 @@ li{
       .btnTop > div {
         cursor: pointer;
       }
-    }
-    .ytp-chrome-top-buttons{
-      display: none !important;
     }
     
 

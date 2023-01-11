@@ -6,8 +6,9 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import recipe from '../json/altdif_lsj.json';
-import '../css/style.scss';
+import recipe from '../../json/altdif_lsj.json';
+import '../../css/style.scss';
+import '../../css/swiper.scss';
 
 function Play(props) {
 const playRe = recipe[2][props.reI]
@@ -27,7 +28,6 @@ const playRe = recipe[2][props.reI]
                             modules={[Pagination, Autoplay]}
                             slidesPerView={2}
                             spaceBetween={30}
-                            // pagination={{clickable: true,}}
                             autoplay={{
                             delay: 2500,
                             disableOnInteraction: false,
@@ -37,7 +37,7 @@ const playRe = recipe[2][props.reI]
                         playRe.map((item, index)=>{
                             return(
                             <SwiperSlide>
-                                <div className=''>
+                                <div id='recipeswiper'>
                                         <img className='recipeImg' src={item.recipeImg} alt="recipeImg"/>
                                     <div className='textB d-flex align-items-center flex-column'>
                                         <p>{item.recipeTitle}</p>

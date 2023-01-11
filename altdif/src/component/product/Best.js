@@ -1,5 +1,5 @@
 import React from 'react';
-import bestproduct from '../json/altdif_lsj.json';
+import bestproduct from '../../json/altdif_lsj.json';
 
 function best(props) {
     const bestPro = bestproduct[1][props.best]
