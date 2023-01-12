@@ -270,6 +270,15 @@ li{
         background-color: #fff;
         padding: 60px;
       }
+      p{
+        color: #9D9993;
+
+        span{
+          font-family: var(--kor-font);
+          color: #7A00FD;
+        }
+        
+      }
     }
 
     #Menu{
@@ -333,6 +342,7 @@ li{
     .footer_sns img{
       padding:16px 16px;
     }
+    img:hover{cursor: pointer; color: #7A00FD;}
   }
 
 // }
