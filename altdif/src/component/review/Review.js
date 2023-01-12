@@ -4,9 +4,9 @@ import Reviewswiper from './Reviewswiper';
 function Review(props) {
     
     return (
-        <section id='review' className='p'>
-            <div className=' reviewBox'>
-                <div className='row'>
+        <section id='review' className='p '>
+            <div className='reviewBox '>
+                <div className=''>
                     <Reviewswiper rev='review'/>
                 </div>
             </div>

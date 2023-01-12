@@ -39,8 +39,9 @@
     position: relative;
     width: 20vw;
     vertical-align: top;
-    padding: 0 0 30px;
-    // margin: 0 13px 30px;
+    // padding: 60px 60px 0;
+    margin-bottom:80px;
+    margin-left: 42px;
     border: 1px solid #e1e1e1;
   }
   .revI{
@@ -48,12 +49,17 @@
     height: 500px;
     overflow: hidden;
   }
-  p{
-    padding-top: 20px;
-  }
+  
 
 }
-
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0px !important;
+}
+.swiper-pagination-bullet-active{
+    transition: 0.7s;
+    --swiper-theme-color: #7659B1;
+    border-radius: 0;
+}
 
 
 

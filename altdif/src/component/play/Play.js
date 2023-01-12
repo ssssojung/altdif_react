@@ -19,7 +19,7 @@ const playRe = recipe[2][props.reI]
             <div className='d-flex row p mx-0'>
                 
                 <div className=' d-flex playBox '>
-                    <div className='col-4 align-items-center pb-5 titletxt '>
+                    <div className='col-4 align-items-center titletxt '>
                         <h2>MAGAZINE</h2>
                         <span>알디프 에디터들이 쓰는 차 이야기</span>
                         <img className=''src="../../img/play/guide.png" alt="" />

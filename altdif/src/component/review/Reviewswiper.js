@@ -1,5 +1,5 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide} from "swiper/react";
 import reviewinfo from '../../json/altdif_lsj.json';
 
 // Import Swiper styles
@@ -10,7 +10,7 @@ import "swiper/css/navigation";
 import "../../css/style.scss";
 
 
-import { Pagination, Autoplay} from "swiper";
+import { Autoplay, Pagination} from "swiper";
 
 function Reviewswiper(props) {
 const review = reviewinfo[3][props.rev]
@@ -30,7 +30,7 @@ const review = reviewinfo[3][props.rev]
           clickable: true,
         }}
         modules={[Pagination, Autoplay]}
-        id="reviewswiper"className=" mySwiper"
+        id="reviewswiper"className=" mySwiper d-flex justify-contents-center"
       >
         {
             review.map((item, index)=>{ 
@@ -39,9 +39,9 @@ const review = reviewinfo[3][props.rev]
                     <SwiperSlide>
                     <div className='col-4 reviewB'>
                         <img className='revI'src={item.reviewImg} alt="reviewImg" />
-                        <p className='m-0 pt-2'>{item.reviewTitle}</p>
-                        <p className='m-0'>{item.reviewsummary}</p>
-                        <img className='pt-2' src="../../img/review/ico_point.gif" alt="" />
+                        <p className='m-0 pt-4'style={{fontSize: "1.2rem"}}>{item.reviewTitle}</p>
+                        <p className='m-0 pt-2'>{item.reviewsummary}</p>
+                        <img className='pt-2 pb-4' src="../../img/review/ico_point.gif" alt="" />
                     </div>
                     </SwiperSlide> 
                     </>
