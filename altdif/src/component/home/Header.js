@@ -46,7 +46,7 @@ function Header(props) {
                 })
             }
         </ul>
-        <ul id='top_right' className='d-flex col justify-content-end'>
+        <ul id='top_right' className='d-flex col justify-content-end pe-5'>
              <li><a href="#">LOGIN / JOIN</a></li>
              <li><a href="#">CART</a></li>
              <li><a href="#">ORDER</a></li>

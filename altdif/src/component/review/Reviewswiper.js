@@ -15,7 +15,7 @@ import { Autoplay, Pagination} from "swiper";
 function Reviewswiper(props) {
 const review = reviewinfo[3][props.rev]
     return (
-        <div>
+        <div className='text-center'>
             <Swiper
         slidesPerView={3}
         spaceBetween={10}

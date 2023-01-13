@@ -59,14 +59,14 @@ const playRe = recipe[2][props.reI]
                     <Modalbasic/>
                 </div>
                 
-                <div className='col-md-5 col-12 playBox mt-5 bg-white me-5 tea_test' >
+                <div className='col-md-4 col-12 playBox mt-5 bg-white me-5 tea_test' >
                     <a href="https://altdif.com/miraclemoment/index.html">
                         <img src="../../img/play/tea_test.jpg" alt="tea_test"/>
                         <div className='tea_blur'><img src="../../img/play/altdif.png" alt="" /></div>
                     </a>
                 </div> 
                 
-                <div className='col-md-7 col-12 playBox mt-5 bg-white' style={{width:"44.1vw"}}>
+                <div className='col-md-7 col-12 playBox mt-5 bg-white' style={{width:"50.7vw"}}>
                     만드는 중에힘들었던거 쓰기
                 </div>
                 

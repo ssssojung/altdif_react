@@ -1,6 +1,6 @@
 // import logo from './logo.svg';
 // css
-import './App.css';
+// import './App.css';/
 import './css/style.scss';
 //component
 import Home from './component/home/Home';
