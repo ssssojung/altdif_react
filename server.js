@@ -23,6 +23,6 @@ app.use ('/contact', userRouter);
 //   res.send({message:'hello'});
 // });
 
-server.listen(8080, ()=>{
+app.listen(8080, ()=>{
   console.log('server is running on 8080')
 })
